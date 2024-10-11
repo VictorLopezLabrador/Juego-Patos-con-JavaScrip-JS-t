@@ -1,0 +1,110 @@
+#canvas{
+    background-size: 100% 100%;            
+    cursor: url(best_sniper_crosshair.cur),default;
+    border: 1px solid black;
+    background-image: url('img/31832.jpg'); 
+    width: 100%; 
+    height: 95vh;
+    user-select: none;
+}
+
+.explosion {
+    cursor: url(best_sniper_crosshair.cur),default;
+    width: 10px;
+    height: 10px;
+    background-color: transparent;
+    position: fixed;
+    border-radius: 50%;
+    border: 1px solid #db4c20;
+    animation: explosion-effect 0.3s linear; 
+    background-image: url('img/explosion.png');
+    background-size: 100% 100%;
+    z-index: 1002;
+}
+
+@keyframes explosion-effect {
+to {
+    transform: scale(8);
+    opacity: 0.05;
+}
+}
+
+.duck {
+    user-select: none;
+    cursor: url(best_sniper_crosshair.cur),default;
+    width: 15rem;
+    height: 15rem;
+    background-color: transparent;
+    position: absolute;
+    border-radius: 50%;
+    animation: duck-effect 4.5s linear;
+    background-image: url('img/duck.gif');
+    background-size: 100% 100%;
+    z-index: 1000;
+}
+
+@keyframes duck-effect {
+to {
+    transform: scale(0.3);
+    opacity: 0.30;
+}
+}
+
+
+.duck2 {
+    user-select: none;
+    cursor: url(best_sniper_crosshair.cur),default;
+    width: 15rem;
+    height: 15rem;
+    background-color: transparent;
+    position: absolute;
+    border-radius: 50%;
+    animation: duck-effect2 4.5s linear;
+    background-image: url('img/duck.gif');
+    background-size: 100% 100%;
+    z-index: 1000;
+    transform: scaleX(-1);
+}
+
+@keyframes duck-effect2 {
+to {            
+    transform: scale(-0.3);
+    opacity: 0.30;
+}
+}
+
+.texto-encima {
+    position: absolute;
+    user-select: none;
+    font-family: 'ArcadeClassic', sans-serif;
+    font-size: 2.5rem;
+}
+
+.tempo {
+    top: 2%;
+    left: 10%;
+}
+
+.score
+{
+    top: 2%;
+    left: 80%;
+}
+
+img{
+    display:block;
+    margin:auto;
+    z-index: 2005;
+}
+
+.sound{
+    user-select: none;
+    position: absolute;
+    display:block;
+    margin:auto;
+    z-index: 2005;
+    top: 2%;
+    left: 2%;
+    width: 4%;
+    /* height: 5%; */
+}
